@@ -10,6 +10,7 @@ const CardStyle = ( props ) => {
     const selectPkm = ( e ) => {
         let sp = props.cards.find(( value ) => value.id === e );
         props.cardsDispatchPkm( sp );
+        console.log( sp );
     }
 
     return(

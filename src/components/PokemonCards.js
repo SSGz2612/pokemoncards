@@ -23,7 +23,7 @@ const PokemonCards = ( props ) => {
         }
 
         fetchApi();
-    }, [])
+    }, [ props ])
 
     useEffect(() => {
         setResultPkm([])
@@ -32,10 +32,11 @@ const PokemonCards = ( props ) => {
                 setResultPkm( resultPkm => [ ...resultPkm, value ])
             }
         })
-    }, [ input, resultPkm ]);
+    }, [ dataPkm, input, resultPkm ]);
 
     return<>
         <header><div className="logoPkm"></div></header>
+        
         <div className="search">
             <input
             type="text"

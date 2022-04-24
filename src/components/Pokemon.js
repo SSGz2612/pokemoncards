@@ -71,9 +71,9 @@ const Pokemon = ( props ) => {
                 <div className="attacksContBox">
                     <div className="attacksContBoxInfo">
                         <div className="attacksCont1">
-                            { x.cost.map(( x, index ) =>
-                            <div key={ index } className={`setTypesStats ${ x }`}></div>
-                            )}
+                        { x.cost.map(( x, index ) =>
+                        <div key={ index } className={`setTypesStats ${ x }`}></div>
+                        )}
                         </div>
                         <div className="attacksCont2 icBox2Text">{ x.name }</div>
                     </div>
@@ -111,7 +111,7 @@ const Pokemon = ( props ) => {
                     <div className="retreatCost">
                         { value.retreatCost === undefined ? "" : value.retreatCost.map(( x, index ) =>
                         <div className="typeBox" key={ index }>
-                            <div className={`setTypesStats ${ x }`}></div>
+                        <div className={`setTypesStats ${ x }`}></div>
                         </div>
                         )}
                     </div>
