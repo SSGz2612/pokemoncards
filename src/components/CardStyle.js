@@ -9,14 +9,13 @@ import { selectedCard } from "../redux/reducer";
 const CardStyle = ( props ) => {
     const selectPkm = ( e ) => {
         let sp = props.cards.find(( value ) => value.id === e );
-        console.log( sp );
         props.cardsDispatchPkm( sp );
     }
 
     return(
         <div className="card">
             <Link to={{ pathname: `/pokemon/${ props.id }` }} onClick={() => selectPkm( props.id )}>
-            <img className="imgBox" src={ props.imageSmall } alt={ props.name }/>
+            <img className="imgBoxSmall" src={ props.imageSmall } alt={ props.name }/>
             </Link>
         </div>
     )

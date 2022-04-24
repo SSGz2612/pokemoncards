@@ -6,13 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/** general **/
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: auto;
-  height: auto;
+  height: 150px;
 }
 .logoPkm {
   display: flex;
@@ -22,6 +22,7 @@ header {
   width: 300px;
   height: 110px;
 }
+/** principal **/
 .search {
   display: flex;
   justify-content: center;
@@ -33,7 +34,7 @@ header {
 .search input {
   width: 300px;
   padding: 10px;
-  border: 2px solid #BBB;
+  border: 2px solid #BBBBBB;
   border-radius: 3px;
 }
 .containerCard {
@@ -51,8 +52,257 @@ header {
   width: 100%;
   height: auto;
 }
-.imgBox {
+.imgBoxSmall {
   display: flex;
   width: 100%;
   height: 100%;
 }
+/** pokemon selected **/
+.headerSelectedCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: auto;
+  height: 150px;
+}
+.containerSelectedCard {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat( auto-fill, minmax( 350px, auto ));
+  margin: auto;
+  max-width: 800px;
+}
+.cardPkm {
+  display: flex;
+  width: 350px;
+  margin: 10px 20px;
+  height: 100%;
+}
+.cardPkm2 {
+  display: flex;
+  height: 100%;
+}
+.infoCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  margin: 10px 20px;
+  height: 100%;
+}
+.imgBoxCont {
+  display: flex;
+  width: 350px;
+  height: 500px;
+}
+.imgBox {
+  display: flex;
+  width: 350px;
+  height: 500px;
+}
+.infoCardName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 600;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px 5px 0px 0px;
+}
+.icBox1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEEEEE;
+  width: 100%;
+  height: auto;
+}
+.icBoxCont {
+  margin: 10px;
+  flex-direction: column;
+}
+.icBoxCont1 { margin: 10px; }
+.icBoxCont2 {
+  display: flex;
+  align-items: center;
+}
+.icBoxCont3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid #EEEEEE;
+}
+.icBox2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.resisAndweak {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+.resisAndweakCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  min-height: 60px;
+  height: auto;
+}
+.retreatCost {
+  display: flex;
+  flex-direction: row;
+}
+.typeBox {
+  display: flex;
+  align-items: center;
+}
+
+.icBox1Text { font-size: 25px; font-weight: 600; }
+.icBox2Text { font-size: 18px; font-weight: 600; }
+.icBox3Text { font-size: 15px; font-weight: 500; }
+.icBox4Text { font-size: 14px; font-weight: 400; }
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.descriptionCont {
+  display: flex;
+  width: 95%;
+  padding: 5px 0px;
+  height: auto;
+}
+.pokedex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #740924;
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+}
+.pokedexBall {
+  background-image: url("../public/tools/pokeball.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0px 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+.attacks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FBFBD6;
+  width: 100%;
+  height: auto;
+}
+.attacksCont {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+  width: 95%;
+  min-height: 70px;
+  height: auto;
+  border-top: 2px solid #BBBBBB;
+}
+.attacksContBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+}
+.attacksContBoxInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.attacksContBoxText {
+  display: flex;
+  padding: 5px;
+  border-radius: 2px;
+}
+.attacksCont1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+}
+.attacksCont2 {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.attacksContBox2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 15%;
+  height: 100%;
+}
+.artist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 5px 5px;
+}
+.setTypesStats {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin: 5px 0; */
+  width: 25px;
+  height: 25px;
+}
+.setTypesHead {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+.Fire { background-image: url("../public/tools/fire.png"); }
+.FireColor { background-color: #E05024; color: white }
+
+.Colorless { background-image: url("../public/tools/colorless.png"); }
+.ColorlessColor { background-color: #BBBBBB; color: black }
+
+.Dragon { background-image: url("../public/tools/dragon.png"); }
+.DragonColor { background-color: #157974; color: white }
+
+.Lightning { background-image: url("../public/tools/lightning.png"); }
+.LightningColor { background-color: #FFF239; color: black }
+
+.Psychic { background-image: url("../public/tools/psychic.png"); }
+.PsychicColor { background-color: #A130A5; color: white }
+
+.Grass { background-image: url("../public/tools/grass.png"); }
+.GrassColor { background-color: #329E62; color: white }
+
+.Fighting { background-image: url("../public/tools/fighting.png"); }
+.FightingColor { background-color: #9E6632; color: white }
+
+.Water { background-image: url("../public/tools/water.png"); }
+.WaterColor { background-color: #327EF0; color: white }
+
+.Darkness { background-image: url("../public/tools/darkness.png"); }
+.DarknessColor { background-color: #000000; color: white }
+
+.Metal { background-image: url("../public/tools/metal.png"); }
+.MetalColor { background-color: #AAAAAA; color: white }

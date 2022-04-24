@@ -20,13 +20,11 @@ export const selectedCard = ( data ) => {
 const reducer = ( state = initialState, action ) => {
     switch( action.type ) {
         case "UPDATE_CARDS":
-        console.log( state.cards )
         return {
             cards: [ action.payload ]
         }
 
         case "SELECTED_CARD":
-        console.log( state.selCard )
         return {
             ...state,
             selCard: [ action.payload ]
